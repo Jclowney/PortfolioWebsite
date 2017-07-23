@@ -6,6 +6,13 @@ body {
 a {
   text-decoration: none;
 }
+.firstBlock{
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .et-hero-tabs,
 .et-slide {
   display: flex;
@@ -16,12 +23,11 @@ a {
   position: relative;
   background: white;
   text-align: center;
-  padding: 0 2em;
 }
-.et-hero-tabs{
+.firstBlock{
   background-image: url("https://s-media-cache-ak0.pinimg.com/originals/cf/b0/7f/cfb07fa6a9d12ff935a2bfcef88e8cc8.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:cover;
 }
 
 .et-hero-tabs h1{
@@ -52,7 +58,6 @@ a {
 .et-hero-tabs-container {
   display: flex;
   flex-direction: row;
-  position: absolute;
   bottom: 0;
   width: 100%;
   height: 70px;
@@ -114,7 +119,7 @@ a {
   z-index: 2147483648;
   background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.05) 51%);
   background-size: 100% 8px;
-  animation: scanlines 5s steps(300) infinite;
+  animation: scanlines 6s steps(60) infinite;
 }
 
 /* ANIMATE UNIQUE SCANLINE */
