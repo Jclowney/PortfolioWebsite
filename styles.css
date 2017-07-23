@@ -79,6 +79,8 @@ a {
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
   font-size: 0.8rem;
+  position: relative;
+  z-index: 12;
 }
 .et-hero-tab:hover {
   color: white;
@@ -106,17 +108,17 @@ a {
 .scanlines:before {
   width: 100%;
   height: 2px;
-  z-index: 2147483649;
+  z-index: 6;
   background: rgba(0, 0, 0, 0.3);
   opacity: 0.75;
-  animation: scanline 6s linear infinite;
+  animation: scanline 5s linear infinite;
 }
 .scanlines:after {
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 2147483648;
+  z-index: 5;
   background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.05) 51%);
   background-size: 100% 8px;
   animation: scanlines 6s steps(60) infinite;
@@ -125,7 +127,10 @@ a {
 /* ANIMATE UNIQUE SCANLINE */
 @keyframes scanline {
   0% {
-    transform: translate3d(0, 200000%, 0);
+    top:100vh
+  }
+  20%,100%{
+    top:0px
   }
 }
 @keyframes scanlines {
