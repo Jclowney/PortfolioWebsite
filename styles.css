@@ -210,18 +210,18 @@ a {
       0% {
       background-color: hsl(331,60%,54%);
     }
-    60% {
+    20% {
       background-color: hsl(167,60%,53%);
       /*background-image: url('https://ih1.redbubble.net/image.233933383.3496/flat,800x800,070,f.u3.jpg');
       background-repeat: no-repeat;
       background-size: 100% 100%;
       background-position: 50%;*/
     }
-    25% {
+    50% {
       background-color: hsl(283,60%,56%);
     }
-    95% {
-      background-color: hsl(224,60%,58%);
+    80% {
+      background-color: hsl(214,100%,24%);
     }
     100%{
       background-color: hsl(331,60%,54%);
@@ -382,4 +382,247 @@ a {
   animation: noise-anim-2 2s infinite linear alternate-reverse;
   -webkit-animation: noise-anim-2 2s infinite linear alternate-reverse;
 
+}
+.sky-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45vh;
+  z-index: 7;
+}
+.sky-stars .dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #FEC8C9;
+}
+.sky-stars .dot:nth-child(1) {
+  top: 31%;
+  left: 47%;
+}
+.sky-stars .dot:nth-child(2) {
+  top: 88%;
+  left: 70%;
+}
+.sky-stars .dot:nth-child(3) {
+  top: 9%;
+  left: 14%;
+}
+.sky-stars .dot:nth-child(4) {
+  top: 78%;
+  left: 39%;
+}
+.sky-stars .dot:nth-child(5) {
+  top: 59%;
+  left: 57%;
+}
+.sky-stars .dot:nth-child(6) {
+  top: 81%;
+  left: 33%;
+}
+.sky-stars .dot:nth-child(7) {
+  top: 8%;
+  left: 5%;
+}
+.sky-stars .dot:nth-child(8) {
+  top: 30%;
+  left: 63%;
+}
+.sky-stars .dot:nth-child(9) {
+  top: 50%;
+  left: 9%;
+}
+.sky-stars .dot:nth-child(10) {
+  top: 8%;
+  left: 54%;
+}
+.sky-stars .dot:nth-child(11) {
+  top: 33%;
+  left: 14%;
+}
+.sky-stars .dot:nth-child(12) {
+  top: 18%;
+  left: 7%;
+}
+.dot{
+  -webkit-animation:dayman 30s linear infinite;
+  animation:dayman 30s linear infinite;
+}
+.sky-stars .dot--blinking {
+  -webkit-animation: blink .25s linear infinite, dayman 30s linear infinite;
+          animation: blink .25s linear infinite, dayman 30s linear infinite;
+}
+.sky-stars .star {
+  position: absolute;
+  color: #FEC8C9;
+  -webkit-animation: scale .5s linear infinite, dayman 30s linear infinite;
+          animation: scale .5s linear infinite, dayman 30s linear infinite;
+}
+.sky-stars .star--sm {
+  width: 28px;
+  height: 28px;
+}
+.sky-stars .star--sm:nth-child(13) {
+  top: 5%;
+  left: 2%;
+}
+.sky-stars .star--sm:nth-child(14) {
+  top: 3%;
+  left: 95%;
+}
+.sky-stars .star--sm:nth-child(15) {
+  top: 4%;
+  left: 87%;
+}
+.sky-stars .star--lg {
+  width: 48px;
+  height: 48px;
+}
+.sky-stars .star--lg:nth-child(16) {
+  top: 50%;
+  left: 50%;
+}
+.sky-stars .star--lg:nth-child(17) {
+  top: 10%;
+  left: 79%;
+}
+.sky-stars .star::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: currentColor;
+  -webkit-animation: grow .5s linear infinite,dayman 30s linear infinite;
+          animation: grow .5s linear infinite, dayman 30s linear infinite;
+}
+.sky-stars .star__part {
+  position: absolute;
+  background: currentColor;
+}
+.sky-stars .star__part:nth-child(1) {
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 20%;
+}
+.sky-stars .star__part:nth-child(2) {
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20%;
+  height: 100%;
+}
+
+@-webkit-keyframes blink {
+  0%, 32%, 67% {
+    opacity: 1;
+  }
+  33%, 66% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0%, 32%, 67% {
+    opacity: 1;
+  }
+  33%, 66% {
+    opacity: 0;
+  }
+}
+@keyframes dayman {
+  0%{
+    opacity: .5;
+  }
+  20%{
+    opacity:0;
+  }
+  50%{
+    opacity:.5;
+  }
+  80%{
+    opacity:1;
+  }
+  100%{
+    opacity:.5;
+  }
+}
+@-webkit-keyframes dayman {
+  0%{
+    opacity: .5;
+  }
+  20%{
+    opacity:0;
+  }
+  50%{
+    opacity:.5;
+  }
+  80%{
+    opacity:1;
+  }
+  100%{
+    opacity:.5;
+  }
+}
+@-webkit-keyframes scale {
+  0%, 16.4%,
+  83.6%, 100% {
+    -webkit-transform: scale(0.75, 0.75);
+            transform: scale(0.75, 0.75);
+  }
+  16.5%, 33%,
+  66.6%, 83.5% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes scale {
+  0%, 16.4%,
+  83.6%, 100% {
+    -webkit-transform: scale(0.75, 0.75);
+            transform: scale(0.75, 0.75);
+  }
+  16.5%, 33%,
+  66.6%, 83.5% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes grow {
+  0%, 16.4%,
+  83.6%, 100% {
+    width: 20%;
+    height: 20%;
+  }
+  16.5%, 33%,
+  66.6%, 83.5% {
+    width: 50%;
+    height: 50%;
+  }
+  33.1%, 50%, 66.5% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes grow {
+  0%, 16.4%,
+  83.6%, 100% {
+    width: 20%;
+    height: 20%;
+  }
+  16.5%, 33%,
+  66.6%, 83.5% {
+    width: 50%;
+    height: 50%;
+  }
+  33.1%, 50%, 66.5% {
+    width: 100%;
+    height: 100%;
+  }
 }
