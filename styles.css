@@ -28,6 +28,7 @@ a {
   background-image: url("https://s-media-cache-ak0.pinimg.com/originals/cf/b0/7f/cfb07fa6a9d12ff935a2bfcef88e8cc8.jpg");
   background-repeat: no-repeat;
   background-size:cover;
+  background-position: 50%;
 }
 
 .et-hero-tabs h1{
@@ -150,6 +151,23 @@ a {
   }
 
   .et-hero-tab {
+    font-size: 1rem;
+  }
+}
+@media(max-width:425px){
+  .et-hero-tabs-container{
+    flex-direction: column;
+    height: 25vh;
+  }
+  .et-hero-tab {
+    font-size: 1rem;
+  }
+  .et-hero-tabs h1,
+  .et-slide h1 {
+    font-size: 2rem;
+  }
+  .et-hero-tabs h3,
+  .et-slide h3 {
     font-size: 1rem;
   }
 }
