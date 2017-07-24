@@ -10,13 +10,17 @@ body {
 a {
   text-decoration: none;
 }
+.et-hero-tabs{
+  background: pink linear-gradient(0deg, white, white 10%, transparent);
+ animation: colorchange 120s infinite;
+}
 .firstBlock{
   flex-grow: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/cf/b0/7f/cfb07fa6a9d12ff935a2bfcef88e8cc8.jpg");
+  background-image: url("mountains.png");
   background-repeat: no-repeat;
   background-size:cover;
   background-position: 50%;
@@ -29,7 +33,6 @@ a {
   align-items: center;
   height: 100vh;
   position: relative;
-  background: white;
   text-align: center;
 }
 
@@ -178,3 +181,26 @@ a {
     display: none;
   }
 }
+@keyframes colorchange
+    {
+      0% {
+      background-color: hsl(331,53%,54%);
+      background-image: url('https://s-media-cache-ak0.pinimg.com/originals/6d/2a/3e/6d2a3ece63bc94cb2f1ee265fd6d16e8.png');
+      background-repeat: no-repeat;
+      background-size:100% 100%;
+      background-position: 50% 50%;
+    }
+    50% {
+      background-color: hsl(167,72%,53%);
+      opacity: .5;
+      background-image: url('https://ih1.redbubble.net/image.233933383.3496/flat,800x800,070,f.u3.jpg');
+      background-repeat: no-repeat;
+      background-size:100% 100%;
+      background-position: 50% 50%;
+    }
+    75% {
+      background-color: hsl(283,49%,56%);
+    }
+    100% {
+      background-color: hsl(224,98%,58%);
+    }
