@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 .et-hero-tabs{
-  background: pink linear-gradient(0deg, white, white 10%, transparent);
+  background: linear-gradient(0deg, white, white 10%, transparent);
  animation: colorchange 120s infinite;
 }
 .firstBlock{
@@ -184,19 +184,18 @@ a {
 @keyframes colorchange
     {
       0% {
-      background-color: hsl(331,53%,54%);
+      background-color: hsl(331,60%,54%);
     }
-    50% {
-      background-color: hsl(167,72%,53%);
-      opacity: .25;
-      background-image: url('https://ih1.redbubble.net/image.233933383.3496/flat,800x800,070,f.u3.jpg');
-      background-repeat: no-repeat;
-      background-size:100% 100%;
-      background-position: 50% 50%;
+    60% {
+      background-color: hsl(167,60%,53%);
+      /*background-image: url('https://ih1.redbubble.net/image.233933383.3496/flat,800x800,070,f.u3.jpg');*/
     }
-    75% {
-      background-color: hsl(283,49%,56%);
+    25% {
+      background-color: hsl(283,60%,56%);
     }
-    100% {
-      background-color: hsl(224,98%,58%);
+    95% {
+      background-color: hsl(224,60%,58%);
+    }
+    100%{
+      background-color: hsl(331,60%,54%);
     }
