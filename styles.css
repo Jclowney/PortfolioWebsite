@@ -17,6 +17,7 @@ a {
 .firstBlock{
   flex-grow: 1;
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,13 +26,15 @@ a {
   background-size:cover;
   background-position: 50%;
 }
+.et-slide{
+  height:100vh;
+}
 .et-hero-tabs,
 .et-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   position: relative;
   text-align: center;
 }
@@ -44,6 +47,7 @@ a {
   color:white;
   position:relative;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  animation: textmove 5s linear infinite;
 }
 .et-slide h1 {
   font-size: 2rem;
@@ -179,6 +183,24 @@ a {
   }
   .et-hero-tab-slider {
     display: none;
+  }
+}
+@keyframes textmove {
+  0%{
+  }
+  12%{
+    transform: translateX(0px);
+  }
+  12.5%{
+    transform: translateX(-10px);
+  }
+  13%{
+    transform: translateX(10px);
+  }
+  13.5%{
+    transform: translateX(0px);
+  }
+  100%{
   }
 }
 @keyframes colorchange
