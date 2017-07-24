@@ -38,7 +38,7 @@ a {
   position: relative;
   text-align: center;
 }
-.glitch{
+.name{
   animation: textmove 5s linear infinite;
 }
 .glitch, .glitchblue, .glitchred{
