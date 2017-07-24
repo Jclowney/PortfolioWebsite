@@ -38,7 +38,9 @@ a {
   position: relative;
   text-align: center;
 }
-
+.glitch{
+  animation: textmove 5s linear infinite;
+}
 .glitch, .glitchblue, .glitchred{
   font-size: 3rem;
   margin: 0;
@@ -47,7 +49,6 @@ a {
   color:white;
   position:relative;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  animation: textmove 5s linear infinite;
 }
 .et-slide h1 {
   font-size: 2rem;
