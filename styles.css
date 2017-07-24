@@ -21,6 +21,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-image: url("mountains.png");
   background-repeat: no-repeat;
   background-size:cover;
@@ -174,7 +175,7 @@ a {
   .et-hero-tab {
     font-size: 1rem;
   }
-  .et-hero-tabs h1,
+  .glitch,.glitchred,.glitchblue,
   .et-slide h1 {
     font-size: 2rem;
   }
