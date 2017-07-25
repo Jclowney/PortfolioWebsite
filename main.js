@@ -33,8 +33,10 @@ class StickyNavigation {
     let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight
     if ($(window).scrollTop() > offset) {
       $('.et-hero-tabs-container').addClass('et-hero-tabs-container--top')
+      $("<div class='invisible'></div>").insertBefore('et-slide')
     } else {
       $('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top')
+      $('.invisible').remove()
     }
   }
 

@@ -45,7 +45,7 @@ a {
 .glitch, .glitchblue, .glitchred{
   font-size: 3rem;
   margin: 0;
-  letter-spacing: 1rem;
+  letter-spacing: .5rem;
   font-family: 'VCRfont';
   color:white;
   position:relative;
@@ -78,6 +78,10 @@ a {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: #DEDCDF;
   z-index: 10;
+}
+.invisible{
+  width:100%;
+  height:70px;
 }
 .et-hero-tabs-container--top {
   position: fixed;
@@ -121,9 +125,9 @@ a {
 }
 .scanlines:before {
   width: 100%;
-  height: 2px;
+  height: 4px;
   z-index: 7;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.35);
   opacity: 0.75;
   animation: scanline 5s linear infinite;
 }
@@ -133,7 +137,7 @@ a {
   bottom: 0;
   left: 0;
   z-index: 6;
-  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.05) 51%);
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.06) 51%);
   background-size: 100% 8px;
   animation: scanlines 6s steps(60) infinite;
 }
@@ -178,6 +182,7 @@ a {
   .glitch,.glitchred,.glitchblue,
   .et-slide h1 {
     font-size: 2rem;
+    width:85%;
   }
   .et-hero-tabs h3,
   .et-slide h3 {
@@ -469,7 +474,7 @@ a {
 }
 .sky-stars .star--sm:nth-child(14) {
   top: 3%;
-  left: 95%;
+  left: 90%;
 }
 .sky-stars .star--sm:nth-child(15) {
   top: 4%;
