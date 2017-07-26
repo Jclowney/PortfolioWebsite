@@ -1,79 +1,29 @@
 class StickyNavigation {
-
   constructor () {
-    this.currentId = null
-    this.currentTab = null
-    this.tabContainerHeight = 70
-    let self = this
-    $('.et-hero-tab').click(function () {
-      self.onTabClick(event, $(this))
-    })
-    $(window).scroll(() => { this.onScroll() })
-    $(window).resize(() => { this.onResize() })
-  }
+    $('.softscroll').on('click',function (e) {
+    	    e.preventDefault();
 
-  onTabClick (event, element) {
-    event.preventDefault()
-    let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1
-    $('html, body').animate({ scrollTop: scrollTop }, 600)
-  }
+    	    var target = this.hash,
+    	    $target = $(target);
 
-  onScroll () {
-    this.checkTabContainerPosition()
-    this.findCurrentTabSelector()
+    	    $('html, body').stop().animate({
+    	        'scrollTop': $target.offset().top
+    	    }, 800, 'swing', function () {
+    	        window.location.hash = target;
+    	    });
+    	});
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 400) {
+          $('.main_nav').addClass('sticky');
+        } else {
+          $('.main_nav').removeClass('sticky');
+        }
+      });
   }
-
-  onResize () {
-    if (this.currentId) {
-      this.setSliderCss()
-    }
-  }
-
-  checkTabContainerPosition () {
-    let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight
-    if ($(window).scrollTop() > offset) {
-      $('.et-hero-tabs-container').addClass('et-hero-tabs-container--top')
-      $("<div class='invisible'></div>").insertBefore('et-slide')
-    } else {
-      $('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top')
-      $('.invisible').remove()
-    }
-  }
-
-  findCurrentTabSelector (element) {
-    let newCurrentId
-    let newCurrentTab
-    let self = this
-    $('.et-hero-tab').each(function () {
-      let id = $(this).attr('href')
-      let offsetTop = $(id).offset().top - self.tabContainerHeight
-      let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight
-      if ($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
-        newCurrentId = id
-        newCurrentTab = $(this)
-      }
-    })
-    if (this.currentId != newCurrentId || this.currentId === null) {
-      this.currentId = newCurrentId
-      this.currentTab = newCurrentTab
-      this.setSliderCss()
-    }
-  }
-
-  setSliderCss () {
-    let width = 0
-    let left = 0
-    if (this.currentTab) {
-      width = this.currentTab.css('width')
-      left = this.currentTab.offset().left
-    }
-    $('.et-hero-tab-slider').css('width', width)
-    $('.et-hero-tab-slider').css('left', left)
-  }
-
 }
-
 new StickyNavigation()
+
+//Stars
 var transition = 40
 var dots = 12
 var lgStars = 2
