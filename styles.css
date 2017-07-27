@@ -188,6 +188,25 @@ a {
     top:0px
   }
 }
+.godown{
+  position: absolute;
+  left: 50%;
+  bottom: 5vh;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  z-index: 5;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  z-index: 1000;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+}
 @keyframes scanlines {
   0% {
     background-position: 0 50%;
@@ -220,6 +239,10 @@ a {
   }
   .main_nav a{
     font-size: 0;
+    width:100%;
+  }
+  .godown{
+    bottom: 10vh;
   }
   .main_nav i{
     font-size: 2rem;
@@ -572,25 +595,6 @@ a {
           transform: translateX(-50%);
   width: 20%;
   height: 100%;
-}
-.godown{
-  position: absolute;
-    left: 50%;
-    bottom: 5vh;
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    z-index: 5;
-    text-decoration: none;
-    text-shadow: 0;
-    width: 13px;
-    height: 13px;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    z-index: 1000;
-    -webkit-transform: translate(-50%, 0%) rotate(45deg);
-    -moz-transform: translate(-50%, 0%) rotate(45deg);
-    transform: translate(-50%, 0%) rotate(45deg);
 }
 @keyframes dayman {
   0%{
