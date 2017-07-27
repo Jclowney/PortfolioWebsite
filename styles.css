@@ -2,6 +2,12 @@
   font-family: 'VCRfont';
   src: url('VCR_OSD_MONO_1.001.ttf');
 }
+/*PARDON THE MESS*/
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Century Gothic", 'Lato', sans-serif;
   margin: 0px;
@@ -10,26 +16,28 @@ body {
 a {
   text-decoration: none;
 }
+.fa{
+  display: none !important;
+}
 .softscroll {
   height:70px;
 }
 .main_nav {
 	position: fixed;
+  z-index: 99999;
 	top: 0px;
-	z-index: 99999;
+  bottom: 0;
 	width: 100%;
+  height: 70px;
 	background: none;
 	overflow: hidden;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	opacity: 0;
-	top: -100px;
+	/*top: -100px;*/
   display: flex;
   flex-direction: row;
   align-items: center;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: #DEDCDF;
 }
@@ -55,17 +63,21 @@ a {
   background-size:cover;
   background-position: 50%;
 }
-.et-slide{
-  height:100vh;
-}
-.et-hero-tabs,
-.et-slide {
+.et-hero-tabs{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   text-align: center;
+}
+.et-slide{
+  height: 100vh;
+  padding: 70px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .name{
   animation: textmove 5s linear infinite;
@@ -79,10 +91,15 @@ a {
   position:relative;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
+.subtitle{
+  margin-top: 5px;
+}
 .et-slide h1 {
+  margin-top: 20px;
   font-size: 2rem;
-  margin: 0;
   letter-spacing: 1rem;
+  border-bottom: 4px solid #6E98C2;
+  padding-bottom: 10px;
 }
 .et-hero-tabs h3{
   font-size: 2rem;
@@ -106,14 +123,6 @@ a {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: #DEDCDF;
   z-index: 10;
-}
-.invisible{
-  width:100%;
-  height:70px;
-}
-.et-hero-tabs-container--top {
-  position: fixed;
-  top: 0;
 }
 
 .et-hero-tab {
@@ -200,24 +209,37 @@ a {
   }
 }
 @media(max-width:425px){
-  .et-hero-tabs-container{
+  .fa{
+    display: inline-block !important;
+  }
+  .main_nav{
     flex-direction: column;
-    height: 25vh;
+    height: 100vh;
+    width: 64px;
+    left: 0;
+  }
+  .main_nav a{
+    font-size: 0;
+  }
+  .main_nav i{
+    font-size: 2rem;
+    padding-right: 10px;
   }
   .et-hero-tab {
     font-size: 1rem;
   }
   .glitch,.glitchred,.glitchblue,
   .et-slide h1 {
-    font-size: 2rem;
-    width:85%;
+    font-size: 1rem;
+    letter-spacing: .5rem;
   }
   .et-hero-tabs h3,
   .et-slide h3 {
     font-size: 1rem;
   }
-  .et-hero-tab-slider {
-    display: none;
+  .et-slide{
+    padding-left: 84px;
+    align-items: center;
   }
 }
 @keyframes textmove {
