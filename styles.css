@@ -34,7 +34,6 @@ a {
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	opacity: 0;
-	/*top: -100px;*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -73,7 +72,7 @@ a {
 }
 .et-slide{
   height: 100vh;
-  padding: 70px 20px 0px 20px;
+  padding: 70px 7% 0px 7%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -90,6 +89,18 @@ a {
   color:white;
   position:relative;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.aboutwrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.aboutcontent{
+  flex-basis: 50%;
+  padding:5px;
+}
+.intro{
+  flex-basis: 100%
 }
 .subtitle{
   margin-top: 5px;
@@ -246,7 +257,7 @@ a {
   }
   .main_nav i{
     font-size: 2rem;
-    padding-right: 10px;
+    padding-right: 10%;
   }
   .et-hero-tab {
     font-size: 1rem;
