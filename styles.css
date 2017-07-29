@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'VCRfont';
-  src: url('VCR_OSD_MONO_1.001.ttf');
+  src: url('./resources/VCR_OSD_MONO_1.001.ttf');
 }
 /*PARDON THE MESS*/
 *{
@@ -61,7 +61,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("mountains.png");
+  background-image: url("./resources/mountains.png");
   background-repeat: no-repeat;
   background-size:cover;
   background-position: 50%;
@@ -82,7 +82,7 @@ a {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.name{
+.glitch{
   animation: textmove 5s linear infinite;
 }
 .glitch, .glitchblue, .glitchred{
@@ -100,11 +100,38 @@ a {
   flex-wrap: wrap;
 }
 .aboutcontent{
+  margin: 30px 0px;
   flex-basis: 50%;
-  padding:5px;
+}
+.aboutcontent h3, h1{
+  margin-bottom: 30px;
 }
 .aboutcontent a{
   cursor: pointer;
+}
+.aboutcontent p{
+  padding-right: 30px;
+}
+.skill-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 120px;
+}
+.row-content{
+  flex-basis:13%;
+}
+.caption-title{
+  padding-top: 5px;
+  opacity: .5;
+  margin-bottom: 5px;
 }
 .intro{
   flex-basis: 100%
@@ -160,15 +187,6 @@ a {
   color: white;
   background: #6E98C2;
   transition: all 0.5s ease;
-}
-
-.et-hero-tab-slider {
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  background: #6E98C2;
-  transition: left 0.3s ease;
 }
 .scanlines {
   position: relative;
@@ -391,7 +409,7 @@ a {
 }
 .glitchred {
   position: absolute;
-  text-shadow: -2px 0 red;
+  text-shadow: -1px 0 red;
   top: 0;
   left: -2px;
   width: 100%;
@@ -469,7 +487,7 @@ a {
 }
 .glitchblue {
   position: absolute;
-  text-shadow: 2px 0 blue;
+  text-shadow: 1px 0 blue;
   top: 0;
   left: 2px;
   width: 100%;

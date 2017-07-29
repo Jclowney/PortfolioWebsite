@@ -1,0 +1,19 @@
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-javascript</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="54" height="54"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Liulian-Copy-11" transform="translate(-421.000000, -667.000000)">
+            <g id="icon-javascript" transform="translate(421.000000, 667.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle-8-Copy" fill="#2259C8" xlink:href="#path-1"></use>
+                <rect id="Rectangle-8-Copy" fill="#2D8EFF" mask="url(#mask-2)" x="28" y="28" width="26" height="26"></rect>
+                <polygon id="Rectangle-8-Copy" fill="#579AE9" mask="url(#mask-2)" transform="translate(27.064479, 27.043159) rotate(-180.000000) translate(-27.064479, -27.043159) " points="54.1289579 -7.10542736e-15 54.1289579 54.0863176 -2.06057393e-13 54.0863176"></polygon>
+                <circle id="Oval-2" fill="#3F76E5" mask="url(#mask-2)" cx="27" cy="0" r="27"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
