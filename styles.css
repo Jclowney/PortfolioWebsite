@@ -49,6 +49,10 @@ a {
 	opacity: 1;
 	top: 0px;
 }
+img{
+  box-shadow: 1px 1px 4px;
+
+}
 .et-hero-tabs{
   background: linear-gradient(0deg, white, white 10%, transparent);
  animation: colorchange 30s infinite;
@@ -139,6 +143,20 @@ a {
 .subtitle{
   margin-top: 5px;
 }
+.project-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.projectimage{
+  flex-basis: 50%;
+  background-image: url('./resources/SoundCloudAppScreenshot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 0px;
+  padding-top: 29%;
+}
 .et-slide h1 {
   margin-top: 20px;
   font-size: 2rem;
@@ -188,6 +206,7 @@ a {
   background: #6E98C2;
   transition: all 0.5s ease;
 }
+/* Scanlines on splash page*/
 .scanlines {
   position: relative;
 }
@@ -225,6 +244,11 @@ a {
     top:0px
   }
 }
+@keyframes scanlines {
+  0% {
+    background-position: 0 50%;
+  }
+}
 .godown{
   position: absolute;
   left: 50%;
@@ -243,11 +267,6 @@ a {
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
   -moz-transform: translate(-50%, 0%) rotate(45deg);
   transform: translate(-50%, 0%) rotate(45deg);
-}
-@keyframes scanlines {
-  0% {
-    background-position: 0 50%;
-  }
 }
 
 @media (min-width: 800px) {
@@ -281,6 +300,12 @@ a {
   .godown{
     bottom: 10vh;
   }
+  .aboutwrapper{
+    flex-direction: column;
+  }
+  .aboutcontent, .intro{
+    flex-basis:0%;
+  }
   .main_nav i{
     font-size: 2rem;
     padding-right: 10%;
@@ -290,16 +315,31 @@ a {
   }
   .glitch,.glitchred,.glitchblue,
   .et-slide h1 {
-    font-size: 1rem;
+    font-size: 2rem;
     letter-spacing: .5rem;
   }
-  .et-hero-tabs h3,
-  .et-slide h3 {
+  .glitch,.glitchred,.glitchblue{
+    width: 70%;
+  }
+  .et-hero-tabs h3{
+    font-size: 1.5rem;
+  }
+  .et-slide h3{
     font-size: 1rem;
+  }
+  .row{
+    margin-bottom: 60px;
   }
   .et-slide{
     padding-left: 84px;
     align-items: center;
+    padding-top: 10px;
+    font-size: .65em;
+    min-height: 100vh;
+    height: auto;
+  }
+  .project-wrapper{
+         flex-direction: column;
   }
 }
 @keyframes textmove {
@@ -498,6 +538,7 @@ a {
   -webkit-animation: noise-anim-2 2s infinite linear alternate-reverse;
 
 }
+/*the stars in the sky*/
 .sky-stars {
   position: absolute;
   top: 0;
@@ -633,6 +674,7 @@ a {
   width: 20%;
   height: 100%;
 }
+/*the day-night cycle*/
 @keyframes dayman {
   0%{
     opacity: .5;
