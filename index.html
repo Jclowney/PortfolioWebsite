@@ -1,5 +1,6 @@
 <!-- Hero -->
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
     <meta name="viewport" content="width=device-width" />
     <script src="https://use.fontawesome.com/7955bb5e82.js"></script>
@@ -53,8 +54,8 @@
     <section class="et-slide" id="tab-skills">
       <h1>Skills</h1>
       <div class='skill-wrapper'>
-      <div class="row">
-        <div class="row-content">
+      <div class="rowz">
+        <div class="rowz-content">
           <img src="./resources/icon7.svg" alt="">
           <div class="caption">
             <div class="caption-title">
@@ -71,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div class="row-content">
+        <div class="rowz-content">
           <img src="./resources/icon8.svg" alt="">
           <div class="caption">
             <div class="caption-title">
@@ -84,11 +85,13 @@
             </div>
           </div>
         </div>
-        <div class="row-content">
+        <div class="rowz-content">
           <img src="./resources/icon9.svg" alt="">
           <div class="caption">
             <div class="caption-title">
-              Front-end Frameworks:
+              Front-end
+              <br />
+              Frameworks:
             </div>
             <div class="caption-content">
               ReactJS/Flux
@@ -96,8 +99,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="row-content">
+      <div class="rowz">
+        <div class="rowz-content">
           <img src="./resources/icon4.svg" alt="">
           <div class="caption">
             <div class="caption-title">
@@ -112,7 +115,7 @@
             </div>
         </div>
         </div>
-        <div class="row-content">
+        <div class="rowz-content">
           <img src="./resources/icon5.svg" alt="">
           <div class="caption">
             <div class="caption-title">
@@ -122,7 +125,7 @@
             </div>
         </div>
         </div>
-        <div class="row-content">
+        <div class="rowz-content">
           <img src="./resources/icon6.svg" alt="">
           <div class="caption">
             <div class="caption-title">
@@ -133,8 +136,8 @@
         </div>
       </div>
     </div>
-      <div class="row">
-        <div class="row-content">
+      <div class="rowz">
+        <div class="rowz-content">
           <img src="./resources/icon1.svg" alt="">
           <div class="caption">
             <div class="caption-title">
@@ -145,7 +148,7 @@
             </div>
         </div>
       </div>
-        <div class="row-content">
+        <div class="rowz-content">
           <img src="./resources/icon2.svg" alt="">
           <div class="caption">
             <div class="caption-title">
@@ -156,7 +159,7 @@
             </div>
         </div>
         </div>
-        <div class="row-content">
+        <div class="rowz-content">
           <img src="./resources/icon3.svg" alt="">
           <div class="caption">
             <div class="caption-title">
@@ -183,15 +186,75 @@
       <div class="project-wrapper">
         <div class="leftside">
           <h2>SoundCloud API App</h2>
+          <p>I used API calls to Soundcloud in order to search for artists and subsequently play their songs. Elements are added and deleted from the static page using DOM manipulations. The equalizer uses audio methods already built into vanilla Javascript.</p>
+          <ul>
+            Tools Used:
+            <li>Javascript</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <a href="https://jclowney.github.io/soundcloud/" class = "projectimage" id="soundcloud"></a>
+      </div>
+      <!-- <div class="project-wrapper">
+        <div class="leftside">
+          <h2>Gargle</h2>
           <p>Description of Project</p>
           <li>Tools used</li>
         </div>
-        <a href="https://github.com/Jclowney/soundcloud" class = "projectimage"></a>
+        <a href="" class = "projectimage"></a>
+      </div> -->
+      <div class="project-wrapper">
+        <div class="leftside">
+          <h2>Earthquake Tracker</h2>
+          <p>A simple ReactJS application that continually checks for earthquakes in the United States, and displays them.</p>
+          <ul>
+            Tools Used:
+            <li>Javascript</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>ReactJS</li>
+            <li>NASA API</li>
+          </ul>
+        </div>
+        <a href="https://github.com/Jclowney/earthquake" class = "projectimage" id="earthquake"></a>
+      </div>
+      <div class="project-wrapper">
+        <div class="leftside">
+          <h2>Ceramic Shop Mockup</h2>
+          <p>This is an example of a website that I can create given a design. The nav bar links to two other pages. Note: this site is not mobile-friendly.</p>
+          <ul>
+            Tools Used:
+            <li>HTML5</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <a href="https://github.com/Jclowney/Ceramics" class = "projectimage" id="ceramic"></a>
+      </div>
+      <div class="project-wrapper">
+        <div class="leftside">
+          <h2>Polybus: Hackathon Project</h2>
+          <p>At the AngelHack Hackathon in Austin, Texas. My group created the base of a networking site that would connect medical missions to physician and student volunteers. Loopback was implemented in order to qualify for one of the prizes. </p>
+          <ul>
+            Tools Used:
+            <li>Javascript</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>PostgreSQL</li>
+            <li>LoopBack</li>
+          </ul>
+        </div>
+        <a href="https://github.com/Jclowney/Polybus" class = "projectimage" id = "polybus"></a>
       </div>
     </section>
     <section class="et-slide" id="tab-contact">
       <h1>Contact</h1>
-      <p>Under Construction!</p>
+      <form method="POST" action="http://formspree.io/YOUREMAILHERE" class="form-group">
+        <input type="text" name="name" placeholder="Your name" class="name form-control">
+        <input type="email" name="email" placeholder="Your email" class ="email form-control">
+        <textarea name="message" placeholder="Your message" rows= "10" class="message form-control"></textarea>
+        <input type="submit" value = "Send" class='button btn btn-primary'>
+      </form>
     </section>
   </main>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
