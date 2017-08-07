@@ -211,7 +211,7 @@ form{
   background-image: url('./resources/Home_Page_Polybus.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
 }
 #earthquake{
   background-image: url('./resources/earthquake.png');
