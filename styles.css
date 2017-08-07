@@ -147,9 +147,15 @@ form{
 }
 .aboutcontent a{
   cursor: pointer;
+  font-size: 1.5rem;
 }
 .aboutcontent p{
   padding-right: 30px;
+  font-size: 1.5rem;
+}
+#contactlinks{
+  display: flex;
+  flex-direction: column;
 }
 .skill-wrapper{
   display: flex;
@@ -173,7 +179,8 @@ form{
   margin-bottom: 5px;
 }
 .intro{
-  flex-basis: 100%
+  flex-basis: 100%;
+  font-size: 1.5rem;
 }
 .subtitle{
   margin-top: 5px;
@@ -229,7 +236,7 @@ form{
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 .et-slide h3 {
-  font-size: 1rem;
+  font-size: 3rem;
   letter-spacing: 0.3rem;
   opacity: 0.6;
   color: gray;
