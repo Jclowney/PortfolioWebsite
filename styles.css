@@ -335,20 +335,7 @@ form{
   transform: translate(-50%, 0%) rotate(45deg);
 }
 
-@media screen and (min-width: 426px), screen and (max-width: 800px) {
-  .et-hero-tabs h1,
-  .et-slide h1 {
-    font-size: 3rem;
-  }
-  .et-hero-tabs h3,
-  .et-slide h3 {
-    font-size: 2rem;
-  }
 
-  .et-hero-tab {
-    font-size: 1rem;
-  }
-}
 @media(max-width:425px){
   .fa{
     display: inline-block !important;
